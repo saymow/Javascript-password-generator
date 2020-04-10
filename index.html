@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8e513bd4bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+      <h1>Password Gen.</h2>
+      <div id="resultEl">
+        <p id="resultOutput">
+        </p>
+        <div><i class="far fa-copy" id="copyBtn"></i></div>
+      </div>
+      <form id="allInputsEl">
+        <div class="inputEl">
+          <label for="pLength">Password length</label>
+          <input type="number" name="pLength" id="pLength" value="8" min="6" max="20"> 
+        </div>
+        <div class="inputEl">
+          <label for="pUppercase">Include uppercase letters</label>
+          <input type="checkbox" id="pUppercase" value="pUppercase" checked>
+        </div>
+        <div class="inputEl">
+          <label for="pLowercase">Include lowercase letters</label>
+          <input type="checkbox" id="pLowercase" value="pLowercase" checked>
+        </div>
+        <div class="inputEl">    
+          <label for="pNumbers">Include numbers</label>
+          <input type="checkbox" id="pNumbers" value="pNumbers" checked>
+        </div>
+        <div class="inputEl">
+          <label for="pSymbols">Include symbols</label>
+          <input type="checkbox" id="pSymbols" value="pSymbols" checked>
+        </div>
+        <button id="submitBtn">Generate password</button>
+      </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
